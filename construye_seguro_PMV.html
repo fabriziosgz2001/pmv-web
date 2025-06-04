@@ -1,4 +1,8 @@
+# Crear una copia del archivo HTML con el nombre correcto 'index.html' para GitHub Pages
+html_path = "/mnt/data/index.html"
 
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write("""
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -56,3 +60,7 @@
   </div>
 </body>
 </html>
+""")
+
+html_path
+
